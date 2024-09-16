@@ -1,0 +1,2 @@
+python parser.py Vietcombank dataset/2024-09-10/original/Vietcombank-0011001932418-20240901-20240910.pdf textPdf tabular --fromOutputFileId=1
+python parser.py Vietcombank dataset/2024-09-10/original/Vietcombank-0011001932418-20240901-20240910.pdf textPdf tabular

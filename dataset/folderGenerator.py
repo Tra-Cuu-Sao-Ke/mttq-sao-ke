@@ -15,11 +15,19 @@ def create_folders(start_date_str, end_date_str):
         print(f"Created folder: {folder_name}")
         current_date += timedelta(days=1)  # Move to the next day
 
+        # make subfolders: original, output, logs and file logs/log.txt
+        os.makedirs(folder_name + '/original', exist_ok=True)
+        os.makedirs(folder_name + '/output', exist_ok=True)
+        os.makedirs(folder_name + '/logs', exist_ok=True)
+        if not os.path.exists(folder_name + '/logs/log.txt'):
+          with open(folder_name + '/logs/log.txt', 'w') as f:
+            f.write('')
+
 if __name__ == '__main__':
     # Check if the correct number of arguments are passed
     if len(sys.argv) != 3:
-        print("Usage: python script.py <start_date> <end_date>")
-        print("Example: python script.py 2024-09-10 2024-09-20")
+        print("Usage: python folderGenerator.py <start_date> <end_date>")
+        print("Example: python folderGenerator.py 2024-09-10 2024-09-20")
     else:
         start_date = sys.argv[1]
         end_date = sys.argv[2]
