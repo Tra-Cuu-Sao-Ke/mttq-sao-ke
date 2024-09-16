@@ -1,2 +1,6 @@
 python parser.py Vietinbank dataset/2024-09-12/original/Vietinbank-111602391111-20240910-20240912.pdf textPdf tabular --fromOutputFileId=1
 python parser.py Vietinbank dataset/2024-09-12/original/Vietinbank-111602391111-20240910-20240912.pdf textPdf tabular
+
+python parser.py Agribank dataset/2024-09-12/original/Agribank-1500201113838-20240901-20240912.pdf textPdf tabular --fromOutputFileId=1
+python parser.py Agribank dataset/2024-09-12/original/Agribank-1500201113838-20240901-20240912.pdf textPdf tabular
+
